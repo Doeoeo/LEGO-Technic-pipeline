@@ -5,6 +5,7 @@ import heapq
 from typing import List, Tuple
 import time
 
+### Funtion is AI generated ###
 def is_point_between(p1, p2, p):
     # Convert points to numpy arrays
     p1 = np.array(p1)
@@ -25,6 +26,7 @@ def is_point_between(p1, p2, p):
     # Check if the point lies within the segment
     return t
 
+### Funtion is AI generated ###
 def saveObj(vertices, edges, name):
     print(f"Vertices: {len(vertices)}, edges: {len(edges)} saving")
     with open(f"{name}.obj", 'w') as f:
@@ -33,7 +35,8 @@ def saveObj(vertices, edges, name):
         f.write("\n")
         for e in edges:
             f.write(f"l {e[0]} {e[1]}\n")
-            
+
+### Funtion is AI generated ###
 def rotations(arr, dict = False):
     """Generate all 90-degree rotations of a 3D numpy array."""
     rotations = []
@@ -60,7 +63,7 @@ def rotations(arr, dict = False):
     if dict: return (rotations, rotDict)
     return rotations
 
-
+### Funtion is AI generated ###
 def filterRotations(rotations):
     """Filter the list of rotations to remove duplicates."""
     uniqueIndices = []
@@ -104,6 +107,7 @@ def createRotationMatrix(rotations):
     rotate_z = np.linalg.matrix_power(rotate_z_90, rotations[2])
     return rotate_z @ (rotate_y @ rotate_x)
 
+### Funtion is AI generated ###
 def createTransformationMatrices():
     """Create transformation matrices for each 90-degree rotation."""
     matrices = []
@@ -141,7 +145,7 @@ def rotateArray(arr:np.ndarray, rotations:tuple[int, int, int]) -> np.ndarray:
         arr = np.rot90(arr, r, axes=a)
     return arr
 
-
+### Funtion is AI generated ###
 def padToCube(arr:np.ndarray) -> np.ndarray:
     """Pad a 3D numpy array with zeros to make it a cube."""
     # Determine the maximum size needed for each dimension
@@ -155,6 +159,7 @@ def padToCube(arr:np.ndarray) -> np.ndarray:
 
     return padded_array
 
+### Funtion is AI generated ###
 def generateCoordinates(arr):
     """Generate an array of coordinates for a 3D numpy array."""
     # Get the shape of the array

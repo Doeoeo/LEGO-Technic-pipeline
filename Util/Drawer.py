@@ -11,7 +11,7 @@ def appendGridLinesToGrid(voxelGrid):
     # add z
     voxelGrid[0, 0, 0:5] = 1
 
-
+### Funtion partially AI generated ###
 def voxels_to_list(voxel_grid):
     """
     Convert a 3D boolean NumPy array voxel grid into a list of voxels with positions.

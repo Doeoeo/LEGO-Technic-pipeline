@@ -6,6 +6,8 @@ import time
 
 import numpy as np
 import vtk
+import sys
+
 
 from Coloring.BlenderRunner import orthographicProjections
 from Coloring.Colorer import colorModel
@@ -39,10 +41,9 @@ def getDataOnModels():
 
 
 if __name__ == '__main__':
-    getDataOnModels()
 
     suffixName = "32"
-    shortName = "Bug"
+    shortName = sys.argv[1]
     filename = f"./Objects/{shortName}.vtk"
     startTime = time.time()
     timers = {}

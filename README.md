@@ -1,9 +1,8 @@
 # LEGO Technic Pipeline
 ### License: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
 
-**Simon Cof¹, Ciril Bohak¹²**
+**Simon Cof¹, Ciril Bohak¹**
 1. University of Ljubljana, Faculty of Computer and Information Science, Večna pot 113, Ljubljana, 1000, Slovenia
-2. King Abdullah University of Science and Technology, Visual Computing Center, Thuwal, 23955-6900, Saudi Arabia
 
 This repository contains a fully automated pipeline for converting arbitrary 3D models into LEGO Technic representations.
 
@@ -37,8 +36,8 @@ Place each resource into the empty folders provided in the repository structure.
 ```
 If you find this dataset useful, please cite our work.
 ```bibtex
-@article{bones2024automatic,
-  author = {Simon Cof, Ciril Bohak},
+@masterthesis{cof2026,
+  author = {Simon Cof},
   title = {Conversion of 3D Mesh Geometry into Models Composed of LEGO Technic Elements},
   school = {University of Ljubljana, Faculty of Computer and Information Science},
   year = {2026}
